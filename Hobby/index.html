@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>个人爱好</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/templatemo_style.css">
+    <link rel="icon" href="./picture/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--End-->
+    <script>
+    fetch('https://v1.hitokoto.cn')
+        .then(function (res){
+        return res.json();
+        })
+        .then(function (data) {
+        var hitokoto = document.getElementById('hitokoto');
+        hitokoto.innerText = data.hitokoto;
+        })
+        .catch(function (err) {
+        console.error(err);
+        })
+    </script>
+
+</head>
+
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+
+<!--这里是上方的留白，万一以后想加个导航什么的呢。。。。-->
+<header class="site-header container animated fadeInDown">
+	<div class="header-wrapper"></div>
+</header>
+
+<div id="menu-container">
+	<div id="menu-1" class="homepage home-section container">
+		<div class="home-intro text-center">
+			<h2 class="welcome-title animated fadeInLeft">kami<p>生命苦涩如歌<br/>Life is bitter as a song.</p></h2>
+		</div>
+        <div style="border-bottom: 2px solid #46494f;"></div>
+       <br /><br />
+
+<div class="projects-header">
+    <h3 class="animated fadeInRight">我的爱好与生活</h3>
+            <h3 class="animated fadeInRight">My hobby and life</h3><br /><br />
+            <p class="animated fadeInLeft">误打误撞走入计算机的世界<br /> Stumble into the world of computers.<br />
+                喜欢新奇的事物，好奇而又胆怯<br />Loves novelty, curious but timid.<br/>
+                喜欢交友，但又有点社恐<br/>I like to make friends, but I am a little social fearful.<br/>
+                想要没有顾虑地打羽毛球，但总会有一些意外出现<br/>I want to play badminton without any worries, but there are always some surprises.
+            </p>
+        </div>
+        <div class="projects-holder">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 p-1 animated umScaleIn">
+                    <div class="project-item">
+                        <img src="picture/1.jpg" alt="">
+                        <div class="overlay">
+                            <h4><a href="#" class="tooltip-test" data-toggle="tooltip" >所以</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 p-2 animated umScaleIn">
+                    <div class="project-item">
+                        <img src="picture/2.jpg" alt="">
+                        <div class="overlay">
+                            <h4><a href="#" class="tooltip-test" data-toggle="tooltip">生命啊</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 p-3 animated umScaleIn">
+                    <div class="project-item">
+                        <img src="picture/3.jpg" alt="">
+                        <div class="overlay">
+                            <h4><a href="#" class="tooltip-test" data-toggle="tooltip" >它</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 p-4 animated umScaleIn">
+                    <div class="project-item animated umScaleIn">
+                        <img src="picture/4.jpg" alt="">
+                        <div class="overlay">
+                            <h4><a href="#" class="tooltip-test" data-toggle="tooltip">苦涩</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="project-item p-5 animated umScaleIn">
+                        <img src="picture/5.jpg" alt="">
+                        <div class="overlay">
+                            <h4><a href="#" class="tooltip-test" data-toggle="tooltip">如歌</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="project-item p-6 animated umScaleIn">
+                        <img src="picture/6.jpg" alt="">
+                        <div class="overlay">
+                            <h4><a href="#" class="tooltip-test" data-toggle="tooltip">璀璨</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="project-item p-7 animated umScaleIn">
+                        <img src="picture/7.jpg" alt="">
+                        <div class="overlay">
+                            <h4><a href="#" class="tooltip-test" data-toggle="tooltip">如歌</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+         <div style="border-bottom: 2px solid #46494f;"></div> <br />
+        <footer>
+<div class="blog-header text-center">
+	<div class="row">
+		<div class="col-md-12 copyright">
+            <p><a href="../index.html">回到首页</a></p>
+			<p>Copyright &copy; 2023&nbsp;Company By&nbsp;&nbsp;kami</p>
+		</div>
+	</div>
+</div>
+</footer>
+<!-- templatemo 421 raleway -->
+<span class="border-top"></span>
+<span class="border-left"></span>
+<span class="border-right"></span>
+<span class="border-bottom"></span>
+    </body>
+</html>
